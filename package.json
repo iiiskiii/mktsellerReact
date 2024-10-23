@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/node": "^22.5.5",
-    "@types/react": "^18.3.8",
-    "@types/react-dom": "^18.3.0",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "29.5.13",
+    "@types/node": "^22.7.8",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-router-dom": "5.3.3",
     "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
@@ -22,7 +24,7 @@
     "pm2": "^5.4.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
-    "react-cookie": "^7.2.0",
+    "react-cookie": "^7.2.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
     "react-router": "^6.27.0",
@@ -32,14 +34,13 @@
     "redux-promise": "^0.6.0",
     "redux-thunk": "^3.1.0",
     "serve": "^14.2.4",
-    "typescript": "^5.6.2",
-    "web-vitals": "^2.1.4"
+    "typescript": "^5.6.3",
+    "web-vitals": "^4.2.3"
   },
   "scripts": {
-    "start": "nodemon --watch mktseller/ mktseller/App.js",
-    "server": "nodemon src/data/server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specifed\" && exit 1",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -62,7 +63,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "type": "module", 
   "author": "",
   "license": "ISC"
 }
